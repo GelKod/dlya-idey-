@@ -2,20 +2,6 @@
 {
     internal class Program
     {
-        static void Pole(string[,] arr)
-        {
-            Console.WriteLine("  1 2 3 <- x");
-            for (int i = 0; i < arr.GetLength(0); i++)
-            {
-                Console.Write(i+1);
-                for (int j = 0; j < arr.GetLength(1); j++)
-                {
-                    Console.Write(" " + arr[i, j]);
-                }
-                Console.WriteLine();
-            }
-            Console.WriteLine("^\r\n|\r\ny");
-        }
         static int ProvPob(string[,] arr, int game)
         {
             for (int i = 0; i < arr.GetLength(0); i++)
@@ -44,6 +30,21 @@
             }
             return game;
         }
+        static void Pole(string[,] arr)
+        {
+            Console.WriteLine("  1 2 3 <- x");
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                Console.Write(i+1);
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    Console.Write(" " + arr[i, j]);
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine("^\r\n|\r\ny");
+        }
+
         static int Input(int inputx)
         {
             bool enterY = false;
