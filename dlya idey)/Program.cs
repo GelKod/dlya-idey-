@@ -30,6 +30,7 @@
             }
             return game;
         }
+        //HAHAHAHAHAHAHAHAHAHAHAHAHA ti loooooh
         static void Pole(string[,] arr)
         {
             Console.WriteLine("  1 2 3 <- x");
